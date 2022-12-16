@@ -1,9 +1,9 @@
 <?php
-namespace Henrotaym\VersioningPackageTemplate\Tests;
+namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Tests;
 
-use Henrotaym\VersioningPackageTemplate\Package;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Package;
 use Henrotaym\LaravelPackageVersioning\Testing\VersionablePackageTestCase;
-use Henrotaym\VersioningPackageTemplate\Providers\VersioningPackageTemplateServiceProvider;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Providers\LaravelTrustupIoSlackNotificationsServiceProvider;
 
 class TestCase extends VersionablePackageTestCase
 {
@@ -15,7 +15,7 @@ class TestCase extends VersionablePackageTestCase
     public function getServiceProviders(): array
     {
         return [
-            VersioningPackageTemplateServiceProvider::class
+            LaravelTrustupIoSlackNotificationsServiceProvider::class
         ];
     }
 }

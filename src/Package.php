@@ -1,7 +1,7 @@
 <?php
-namespace Henrotaym\VersioningPackageTemplate;
+namespace Deegitalbe\LaravelTrustupIoSlackNotifications;
 
-use Henrotaym\VersioningPackageTemplate\Contracts\PackageContract;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts\PackageContract;
 use Henrotaym\LaravelPackageVersioning\Services\Versioning\VersionablePackage;
 
 class Package extends VersionablePackage implements PackageContract

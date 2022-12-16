@@ -1,7 +1,7 @@
 <?php
-namespace Henrotaym\VersioningPackageTemplate\Tests\Feature;
+namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Tests\Feature;
 
-use Henrotaym\VersioningPackageTemplate\Tests\TestCase;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Tests\TestCase;
 
 class ExampleFeatureTest extends TestCase
 {

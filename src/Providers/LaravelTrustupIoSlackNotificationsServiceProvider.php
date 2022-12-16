@@ -1,10 +1,10 @@
 <?php
-namespace Henrotaym\VersioningPackageTemplate\Providers;
+namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Providers;
 
-use Henrotaym\VersioningPackageTemplate\Package;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Package;
 use Henrotaym\LaravelPackageVersioning\Providers\Abstracts\VersionablePackageServiceProvider;
 
-class VersioningPackageTemplateServiceProvider extends VersionablePackageServiceProvider
+class LaravelTrustupIoSlackNotificationsServiceProvider extends VersionablePackageServiceProvider
 {
     public static function getPackageClass(): string
     {
