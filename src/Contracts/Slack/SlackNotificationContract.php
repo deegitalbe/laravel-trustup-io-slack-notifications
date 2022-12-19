@@ -1,6 +1,7 @@
 <?php
 namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts\Slack;
 
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Enum\SlackChannel;
 use Illuminate\Notifications\Messages\SlackMessage;
 
 /** Representing slack notification */
@@ -17,9 +18,9 @@ interface SlackNotificationContract
      * Representing channel where notification should be sent
      * 
      * @param  mixed  $notifiable
-     * @return string
+     * @return string|SlackChannel
      */
-    public function slackChannel($notifiable): string;
+    public function slackChannel($notifiable): string|SlackChannel;
 
     /**
    * Get the Slack representation of the notification.
@@ -32,8 +33,9 @@ interface SlackNotificationContract
     /**
      * Building slack message.
      * 
+     * @param  SlackMessage  $message
      * @param  mixed  $notifiable
      * @return SlackMessage
      */
-    public function getSlackMessage($notifiable): SlackMessage;
+    public function slackMessage(SlackMessage $message, $notifiable): SlackMessage;
 }

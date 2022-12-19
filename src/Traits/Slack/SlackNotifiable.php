@@ -1,9 +1,12 @@
 <?php
 
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Facades\Package;
+use Illuminate\Notifications\Notifiable;
 
 trait SlackNotifiable
 {
+    use Notifiable;
+    
     /**
      * Defining route to use for slack notifications.
      * 

@@ -25,8 +25,14 @@ trait IsSlackNotification
    */
     public function toSlack($notifiable)
     {
-        return $this->getSlackMessage($notifiable)
-            ->to($this->getSlackChannel($notifiable))
-            ->http(['headers' => ['Authorization' => Package::getConfig('slack.token')]]);
+        $channel = $this->slackChannel($notifiable);
+
+        $message = (new SlackMessage)
+            ->to($channel->value ?? $channel)
+            ->http([
+                'headers' => ['Authorization' => Package::getConfig('slack.token')]
+            ]);
+
+        return $this->slackMessage($message, $notifiable);
     }
 }
