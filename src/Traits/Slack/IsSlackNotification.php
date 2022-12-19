@@ -30,7 +30,7 @@ trait IsSlackNotification
         $message = (new SlackMessage)
             ->to($channel->value ?? $channel)
             ->http([
-                'headers' => ['Authorization' => Package::getConfig('slack.token')]
+                'headers' => ['Authorization' => 'Bearer ' . Package::getConfig('slack.token')]
             ]);
 
         return $this->slackMessage($message, $notifiable);
