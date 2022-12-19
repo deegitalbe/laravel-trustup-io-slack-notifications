@@ -18,8 +18,11 @@ SLACK_API_TOKEN=
 
 ### Configure your models
 ```php
-use Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts\Slack\SlackNotifiableContract;
 use Illuminate\Database\Eloquent\Model;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Traits\Slack\SlackNotifiable;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts\Slack\SlackNotifiableContract;
+
+use Illuminate\Notifications\Notification;
 
 class User extends Model implements SlackNotifiableContract
 {
@@ -31,9 +34,9 @@ class User extends Model implements SlackNotifiableContract
 
 #### Extending slack notification
 ```php
-use Deegitalbe\LaravelTrustupIoSlackNotifications\Enum\SlackChannel;
-use Deegitalbe\LaravelTrustupIoSlackNotifications\SlackNotification;
 use Illuminate\Notifications\Messages\SlackMessage;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\SlackNotification;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Enum\SlackChannel;
 
 class OrderReceived extends SlackNotification
 {
@@ -51,11 +54,10 @@ class OrderReceived extends SlackNotification
 
 #### Implementing contract and using trait
 ```php
-use Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts\Slack\IsSlackNotification;
-use Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts\Slack\SlackNotificationContract;
-use Deegitalbe\LaravelTrustupIoSlackNotifications\Enum\SlackChannel;
 use Illuminate\Notifications\Messages\SlackMessage;
-use Illuminate\Notifications\Notification;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Enum\SlackChannel;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Traits\Slack\IsSlackNotification;
+use Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts\Slack\SlackNotificationContract;
 
 class OrderReceived extends Notification implements SlackNotificationContract
 {

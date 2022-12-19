@@ -1,5 +1,5 @@
 <?php
-namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts\Slack;
+namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Traits\Slack;
 
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Facades\Package;
 use Illuminate\Notifications\Messages\SlackMessage;
