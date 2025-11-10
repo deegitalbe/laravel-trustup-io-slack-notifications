@@ -4,6 +4,7 @@ namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Tests;
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Package;
 use Henrotaym\LaravelPackageVersioning\Testing\VersionablePackageTestCase;
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Providers\LaravelTrustupIoSlackNotificationsServiceProvider;
+use Illuminate\Notifications\SlackChannelServiceProvider;
 
 class TestCase extends VersionablePackageTestCase
 {
@@ -15,6 +16,7 @@ class TestCase extends VersionablePackageTestCase
     public function getServiceProviders(): array
     {
         return [
+            SlackChannelServiceProvider::class,
             LaravelTrustupIoSlackNotificationsServiceProvider::class
         ];
     }

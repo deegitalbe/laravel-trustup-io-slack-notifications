@@ -12,5 +12,8 @@
         "commit:all": "git add . && npm run commit",
         "alpha": "npm version --preid=alpha",
         "version:alpha": "npm version prerelease --preid=alpha"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.29.7"
     }
 }
