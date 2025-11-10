@@ -4,11 +4,9 @@
   "workspaces": {
     "": {
       "name": "laravel-trustup-io-slack-notifications",
-      "dependencies": {
-        "lefthook": "^2.0.3",
-      },
       "devDependencies": {
         "@changesets/cli": "^2.29.7",
+        "lefthook": "^2.0.3",
       },
     },
   },
