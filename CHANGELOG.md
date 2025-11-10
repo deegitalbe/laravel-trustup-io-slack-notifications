@@ -1,5 +1,11 @@
 # laravel-trustup-io-slack-notifications
 
+## 1.1.2
+
+### Patch Changes
+
+- 0dcb129: Dev scripts
+
 ## 1.1.1
 
 ### Patch Changes
