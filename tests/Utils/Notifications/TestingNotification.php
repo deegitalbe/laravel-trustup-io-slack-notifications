@@ -12,17 +12,17 @@ class TestingNotification extends SlackChannelNotification
         return $message->attachment(function ($attachment) {
             $attachment->color('#36a64f')
                 ->author('🚨 New Activation Request')
-                ->title("Tenant #test")
+                ->title('Tenant #test')
                 ->fields([
-                    'Enterprise' => "test",
-                    'Account Type' => "test",
-                    'Admin First Name' => "test",
-                    'Admin Last Name' => "test",
-                    'VAT Number' => "test",
-                    'Created At' => "test",
+                    'Enterprise' => 'test',
+                    'Account Type' => 'test',
+                    'Admin First Name' => 'test',
+                    'Admin Last Name' => 'test',
+                    'VAT Number' => 'test',
+                    'Created At' => 'test',
                 ])
                 ->footer('TrustUp')
-                ->footerIcon("test")
+                ->footerIcon('test')
                 ->timestamp(now());
         });
     }

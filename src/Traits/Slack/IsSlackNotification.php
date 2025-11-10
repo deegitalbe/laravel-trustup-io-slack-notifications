@@ -1,4 +1,5 @@
 <?php
+
 namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Traits\Slack;
 
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Facades\Package;
@@ -9,7 +10,7 @@ trait IsSlackNotification
 {
     /**
      * Defining notification channel
-     * 
+     *
      * @return string[]
      */
     public function via()
@@ -18,11 +19,11 @@ trait IsSlackNotification
     }
 
     /**
-   * Get the Slack representation of the notification.
-   *
-   * @param  mixed  $notifiable
-   * @return SlackMessage
-   */
+     * Get the Slack representation of the notification.
+     *
+     * @param  mixed  $notifiable
+     * @return SlackMessage
+     */
     public function toSlack($notifiable)
     {
         $channel = $this->slackChannel($notifiable);
@@ -30,7 +31,7 @@ trait IsSlackNotification
         $message = (new SlackMessage)
             ->to($channel->value ?? $channel)
             ->http([
-                'headers' => ['Authorization' => 'Bearer ' . Package::getConfig('slack.token')]
+                'headers' => ['Authorization' => 'Bearer '.Package::getConfig('slack.token')],
             ]);
 
         return $this->slackMessage($message, $notifiable);

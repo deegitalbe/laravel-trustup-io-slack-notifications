@@ -1,4 +1,5 @@
 <?php
+
 namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Tests\Unit;
 
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Tests\TestCase;

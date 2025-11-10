@@ -1,4 +1,5 @@
 <?php
+
 namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Providers;
 
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Package;

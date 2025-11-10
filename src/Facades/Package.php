@@ -1,4 +1,5 @@
 <?php
+
 namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Facades;
 
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Package as Underlying;

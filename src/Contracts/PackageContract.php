@@ -1,13 +1,11 @@
 <?php
+
 namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts;
 
-use Henrotaym\LaravelPackageVersioning\Services\Versioning\Contracts\VersionablePackageContract;
 use Henrotaym\LaravelContainerAutoRegister\Services\AutoRegister\Contracts\AutoRegistrableContract;
+use Henrotaym\LaravelPackageVersioning\Services\Versioning\Contracts\VersionablePackageContract;
 
 /**
  * Versioning package.
  */
-interface PackageContract extends VersionablePackageContract, AutoRegistrableContract
-{
-    
-}
+interface PackageContract extends AutoRegistrableContract, VersionablePackageContract {}

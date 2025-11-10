@@ -1,4 +1,5 @@
 <?php
+
 namespace Deegitalbe\LaravelTrustupIoSlackNotifications;
 
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Contracts\PackageContract;
@@ -8,6 +9,6 @@ class Package extends VersionablePackage implements PackageContract
 {
     public static function prefix(): string
     {
-        return "laravel-trustup-io-slack-notifications";
+        return 'laravel-trustup-io-slack-notifications';
     }
 }

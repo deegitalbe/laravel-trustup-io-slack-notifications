@@ -1,4 +1,5 @@
 <?php
+
 namespace Deegitalbe\LaravelTrustupIoSlackNotifications\Tests\Feature;
 
 use Deegitalbe\LaravelTrustupIoSlackNotifications\Enum\SlackChannel;
@@ -13,7 +14,7 @@ class SlackChannelNotificationTest extends TestCase
     public function test_slack_notification_in_production()
     {
         Notification::fake();
-        
+
         $notification = new TestingNotification;
         $channel = SlackChannel::TECH_DEV;
         $notifiable = new SlackNotifiableChannel($channel);
@@ -31,7 +32,7 @@ class SlackChannelNotificationTest extends TestCase
             ->once()
             ->withNoArgs()
             ->andReturnTrue();
-        
+
         $notification = new TestingNotification;
         $channel = SlackChannel::TECH_DEV;
         $notifiable = new SlackNotifiableChannel($channel);
@@ -45,7 +46,7 @@ class SlackChannelNotificationTest extends TestCase
             ->once()
             ->withNoArgs()
             ->andReturnFalse();
-        
+
         $notification = new TestingNotification;
         $channel = SlackChannel::TECH_DEV;
         $notifiable = new SlackNotifiableChannel($channel);

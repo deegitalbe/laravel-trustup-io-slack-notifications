@@ -9,5 +9,8 @@
     "scripts": {},
     "devDependencies": {
         "@changesets/cli": "^2.29.7"
+    },
+    "dependencies": {
+        "lefthook": "^2.0.3"
     }
 }
