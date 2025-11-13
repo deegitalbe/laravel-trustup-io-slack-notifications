@@ -1,5 +1,11 @@
 # laravel-trustup-io-slack-notifications
 
+## 1.1.3
+
+### Patch Changes
+
+- Adding the #inbound_activation_requests slack channel to the enum
+
 ## 1.1.2
 
 ### Patch Changes

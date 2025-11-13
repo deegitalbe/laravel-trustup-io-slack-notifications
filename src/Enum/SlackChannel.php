@@ -14,6 +14,7 @@ enum SlackChannel: string
     case TEST = '#bot-test-internal';
     case MONITORING = '#monitoring';
     case TECH_DEV = '#tech--development';
+    case INBOUND_ACTIVATION_REQUESTS = '#inbound-activation-requests';
 
     public function notify(Notification $notification): void
     {
