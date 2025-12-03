@@ -1,5 +1,11 @@
 # laravel-trustup-io-slack-notifications
 
+## 1.1.4
+
+### Patch Changes
+
+- 5c9e20d: Adding tech feature monitoring channel.
+
 ## 1.1.3
 
 ### Patch Changes
