@@ -1,5 +1,11 @@
 # laravel-trustup-io-slack-notifications
 
+## 1.1.5
+
+### Patch Changes
+
+- 360f83f: Adding project activation
+
 ## 1.1.4
 
 ### Patch Changes
