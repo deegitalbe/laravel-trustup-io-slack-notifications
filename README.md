@@ -2,6 +2,13 @@
 
 This package enhances laravel slack notifications, allowing to send direct messages.
 
+## Compatibility
+
+| Laravel | Package |
+|---|---|
+| 8.x | 1.x |
+| 12.x | 2.x |
+
 ## Installation
 
 ### Require package
