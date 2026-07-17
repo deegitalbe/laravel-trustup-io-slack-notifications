@@ -1,5 +1,11 @@
 # laravel-trustup-io-slack-notifications
 
+## 2.0.1
+
+### Patch Changes
+
+- 284684b: Adding peppol free
+
 ## 1.1.5
 
 ### Patch Changes
