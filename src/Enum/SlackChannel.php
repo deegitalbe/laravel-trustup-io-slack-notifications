@@ -16,7 +16,8 @@ enum SlackChannel: string
     case TECH_DEV = '#tech--development';
     case INBOUND_ACTIVATION_REQUESTS = '#inbound-activation-requests';
     case TECH_FEATURES_MONITORING = '#tech--features-monitoring';
-    case PROJECT_ACTIVATION_PEPPOL = '#projet-activation-peppol';
+    case PROJECT_ACTIVATION_PEPPOL = '#project-activation-peppol';
+    case PEPPOL_FREE_REGISTRATIONS = '#peppol-free-registrations';
 
     public function notify(Notification $notification): void
     {
